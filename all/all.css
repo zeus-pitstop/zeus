@@ -1,0 +1,179 @@
+/* General container styling */
+.product-list .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid for products - 4 items per row */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Container for the product image and heart icon */
+.product-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.heart-symbol {
+    color: red;
+    padding-right: 5px;
+}
+
+/* Ensure proper styling for the heart icon */
+.wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #cccccc; /* Default color for the heart icon */
+    cursor: pointer;
+}
+
+.wishlist-link i {
+    color: grey; /* Default grey color */
+}
+
+.wishlist-link.active i {
+    color: red; /* Red color when active */
+}
+
+/* Ensures the heart icon is above the image */
+.product-image-container img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Product item styling */
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 12px; /* Curved corners */
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Ensure full height for all product items */
+}
+
+/* Style for the quantity input field */
+.product-item input[type="number"] {
+    width: 80px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    padding: 5px; /* Adjust the padding for better spacing */
+    font-size: 16px; /* Increase font size for better readability */
+    border-radius: 5px; /* Add rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    box-sizing: border-box; /* Ensure padding doesn't affect the width/height */
+    text-align: center; /* Center the number inside the field */
+}
+
+.product-item input[type="number"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove the default outline */
+}
+
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product image styling */
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 12px 12px 0 0; /* Curved top corners */
+    transition: opacity 0.3s ease;
+}
+
+/* Product title */
+
+/* Style for the product titles */
+.product-item h2 a {
+    color: #000; /* Set the text color to black */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.product-item h2 a:hover {
+    color: #007bff; /* Optional: Change the color on hover */
+}
+
+
+/* Product price */
+.product-item p {
+    color: #000000 !important; /* Set the text color to black */
+    font-size: 1.1em; /* Adjust the font size as needed */
+    margin-top: auto;
+}
+
+
+/* Container for content above the button */
+.product-content {
+    flex-grow: 1;
+}
+
+/* Add to cart button styling */
+.product-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.product-item .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Ensure the product content layout is consistent */
+.product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Make sure the image container has a fixed height, so all product images are uniform */
+.product-image-container {
+    height: 200px; /* Adjust this value to your desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Ensure the image fits well within the container */
+}
+
+/* Ensure the product rating stays fixed and doesn't shift with the image size */
+.product-rating {
+    margin-top: auto; /* Push it to the bottom of the content above the form */
+    text-align: left;
+}
+
+.product-rating i {
+    color: #FFD700; /* Star color */
+}
+
+/* Unfilled heart icon (grey) */
+.wishlist-icon i {
+    color: #888;
+}
+
+/* Filled heart icon (red) */
+.wishlist-icon i.filled {
+    color: #dc3545;
+}

@@ -1,0 +1,34 @@
+/* System Updates Page Styles */
+.system-updates-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.system-updates-list th, .system-updates-list td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.system-updates-list th {
+    background-color: #f4f4f4;
+}
+
+.update-btn {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn-update-system {
+    background-color: #28a745;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-update-system:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,299 @@
+/* General reset and box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Full height for html and body */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+}
+
+body{
+    background-image: url('../image.jpg'); /* Replace with the correct path to your image */
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+}
+
+/* Header styling */
+header {
+    background: #007bff; /* Premium color */
+    color: #fff;
+    padding: 1rem;
+    width: calc(100% - 250px); /* Adjust to fit with the sidebar width */
+    position: fixed;
+    top: 0;
+    left: 250px; /* Space for the sidebar */
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Width of the sidebar */
+    background-color: #343a40; /* Dark color for the sidebar */
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Scroll if content exceeds height */
+}
+
+.sidebar h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #007bff; /* Premium color for headings */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    background-color: #495057; /* Slightly lighter dark color */
+}
+
+.sidebar ul li a:hover {
+    background-color: #007bff; /* Premium color for hover effect */
+    color: #fff;
+}
+
+/* Main content area */
+main{
+    background-image: url('../image.jpg'); /* Replace with the correct path to your image */
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+}
+
+/* Footer styling */
+footer {
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 250px); /* Adjust the width to fit the remaining space */
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button styling */
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Admin-specific styling */
+.admin-header, .admin-nav, .admin-main, .admin-footer {
+    padding: 1rem;
+}
+
+.admin-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+.admin-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.admin-nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Admin dashboard specific styling */
+.dashboard-overview, .product-management, .order-management, .user-management, .inventory-management, .reviews-feedback, .settings, .security-maintenance, .backup-restore, .support {
+    margin-bottom: 2rem;
+}
+
+/* Add product page styling */
+.add-product-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.add-product-form input, .add-product-form select, .add-product-form textarea {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+/* Manage products and categories styling */
+.manage-products, .manage-categories {
+    margin-bottom: 2rem;
+}
+
+/* View orders and order details styling */
+.view-orders, .order-details {
+    margin-bottom: 2rem;
+}
+
+/* User management styling */
+.view-users, .edit-user, .manage-permissions {
+    margin-bottom: 2rem;
+}
+
+/* Inventory and stock alerts styling */
+.inventory, .stock-alerts {
+    margin-bottom: 2rem;
+}
+
+/* Manage reviews and feedback styling */
+.manage-reviews, .manage-feedback {
+    margin-bottom: 2rem;
+}
+
+/* Settings, logs, updates, backup, and support styling */
+.site-settings, .payment-settings, .shipping-settings, .access-logs, .system-updates, .database-backup, .restore-data, .support-requests {
+    margin-bottom: 2rem;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 270px; /* Space for the sidebar */
+    padding: 2rem;
+    flex: 1;
+}
+
+/* Overview Section */
+.overview {
+    margin-bottom: 2rem;
+}
+
+.overview h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0; /* Lighter color for headings */
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #343a40; /* Dark background for cards */
+    border: 1px solid #495057; /* Slightly lighter border */
+    border-radius: 5px;
+    padding: 1rem;
+    width: 23%; /* Adjust card width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+    text-align: center;
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0; /* Lighter color for card titles */
+}
+
+.card p {
+    font-size: 1.5rem;
+    color: #007bff; /* Premium color for numbers */
+}
+
+/* Recent Activity Section */
+.recent-activity {
+    margin-bottom: 2rem;
+}
+
+.recent-activity h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0; /* Lighter color for headings */
+}
+
+.recent-activity table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #e0e0e0; /* Light text color for table */
+}
+
+.recent-activity th,
+.recent-activity td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #495057; /* Slightly lighter border */
+}
+
+.recent-activity th {
+    background-color: #495057; /* Darker gray for headers */
+}
+
+/* Quick Actions Section */
+.quick-actions {
+    margin-bottom: 2rem;
+}
+
+.quick-actions h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0; /* Lighter color for headings */
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+}
+
+.button-container .btn {
+    background-color: #007bff; /* Premium button color */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button-container .btn:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}

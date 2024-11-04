@@ -1,0 +1,30 @@
+/* Update Order Status Page Styles */
+.status-form {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.status-form select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.status-btn {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn-update {
+    background-color: #28a745;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-update:hover {
+    background-color: #218838;
+}

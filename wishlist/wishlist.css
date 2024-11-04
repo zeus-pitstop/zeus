@@ -1,0 +1,251 @@
+/* General Wishlist Styling */
+.wishlist {
+    padding: 20px;
+}
+
+.wishlist .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Wishlist Title */
+.wishlist-title {
+    font-size: 2.5em;
+    color: #ffaa00; /* Change to match your theme color */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Add All to Cart Button */
+.btn-add-all {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-all:hover {
+    background-color: #0056b3;
+}
+
+/* Product Item Styling */
+.product {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px; /* Increased space between products */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    max-width: 1000px; /* Reduce overall size */
+    margin: 0 auto; /* Center align */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    position: relative;
+}
+
+/* Hover effect for the product background */
+.product:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Product Image */
+.product-image-container {
+    flex: 0 0 150px; /* Adjust size as needed */
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.product-image-container img {
+    width: 100%; /* Ensures the image fits the container */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth image hover effect */
+}
+
+.product-image-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Product Details */
+.product-details {
+    flex: 1;
+    text-align: left;
+}
+
+/* Product Title and Price */
+.product-details h3 {
+    font-size: 1.8em;
+    margin: 0 0 10px;
+    color: #000; /* Changed to black */
+}
+
+.product-description {
+    margin-bottom: 10px;
+    color: #000; /* Changed to black */
+}
+
+.product-price,
+.product-total {
+    margin-bottom: 10px;
+    color: #000; /* Changed to black */
+}
+
+/* Stock Status */
+.stock-status {
+    font-weight: bold;
+    color: #000; /* Changed to black */
+}
+
+.in-stock {
+    color: green;
+}
+
+.out-of-stock {
+    color: red;
+}
+
+/* Quantity Form and Update Button */
+.quantity-update-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns to the right */
+    margin-top: 10px;
+}
+
+.quantity-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Added space below quantity form */
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* Update Button */
+.btn-update {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-update:hover {
+    background-color: #0056b3;
+}
+
+/* Add to Cart Button */
+.btn-add-to-cart {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #218838;
+}
+
+/* Existing styles... */
+
+.btn-remove {
+    background-color: #f44336; /* Red color */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    padding: 8px 16px; /* Padding */
+    font-size: 14px; /* Font size */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    text-align: center; /* Center text */
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-remove:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.btn-remove:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.5); /* Add custom focus outline */
+}
+
+
+/* CSS for Wishlist Login */
+.wishlist-login {
+    color: #fff; /* White text for visibility */
+    background-color: #333; /* Dark gray background for contrast */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 20px; /* Adds space below the message */
+}
+
+.wishlist-login a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wishlist-login a:hover {
+    text-decoration: none;
+}
+
+/* CSS for Wishlist Empty */
+.wishlist-empty {
+    color: #fff; /* White text for visibility */
+    background-color: #333; /* Dark gray background for contrast */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 20px; /* Adds space below the message */
+}
+
+/* CSS for Buttons Container */
+.btn-container {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    margin-top: 20px; /* Adds some space above the buttons */
+    gap: 10px; /* Adds space between the buttons */
+}
+
+/* CSS for Buttons */
+.btn {
+    color: #fff;
+    background-color: #007BFF; /* Button with noticeable blue color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; /* Removes underline from links */
+    display: inline-block; /* Makes the link look like a button */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade of blue for hover effect */
+}

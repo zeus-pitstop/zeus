@@ -1,0 +1,16 @@
+/* Stock Alerts Page Styles */
+.alerts-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.alerts-list th, .alerts-list td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.alerts-list th {
+    background-color: #f4f4f4;
+}

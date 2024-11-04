@@ -1,0 +1,138 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('../image/bg.jpg'); /* Background image on the body */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+    min-height: 100vh; /* Ensures the background covers the entire viewport */
+}
+
+/* Auth Section */
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-size: cover; /* Make sure the background image covers the entire section */
+    background-position: center;
+}
+
+/* Auth Container */
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow with the main site */
+}
+
+/* Form Container */
+.auth-container h2 {
+    color: #eaeaea; /* Dark text color for better readability */
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #eaeaea; /* Dark text color for labels */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border for inputs */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Auth Button */
+.auth-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #f5a623; /* Softer shade of orange for contrast */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-btn:hover {
+    background-color: #f4a300; /* Darker shade on hover */
+}
+
+/* Error Message */
+.error-message {
+    color: #f44336; /* Red color for errors */
+    display: none;
+}
+
+.create-account-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.error-message {
+    color: #f44336; /* Red color for errors */
+    margin-top: 10px;
+    text-align: center;
+    display: block; /* Ensure it is visible */
+}
+
+/* Success Message */
+.success-message {
+    color: #4CAF50; /* Green color for success */
+}
+
+/* Adjust styling for links */
+.create-account-link a {
+    color: #f5a623;
+}
+
+.create-account-link a:hover {
+    text-decoration: underline;
+}
+
+.show-password-container {
+    margin-top: 5px;
+}
+
+.show-password-container label {
+    color: #eaeaea; /* Match the color of the other labels */
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.show-password-container input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input[type="password"] {
+    padding-right: 40px; /* Add padding to accommodate the eye icon */
+}
+
+.password-wrapper .fa-eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+}

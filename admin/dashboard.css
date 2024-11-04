@@ -1,0 +1,18 @@
+/* dashboard.css */
+.dashboard-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.dashboard-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+}
+
+.dashboard-card h3 {
+    margin: 0 0 10px;
+}

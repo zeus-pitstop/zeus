@@ -1,0 +1,92 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: black; /* Ensures text color is black */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color for headings */
+}
+
+/* Product List Styles */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s; /* Transition for box-shadow and transform */
+    width: calc(33.333% - 20px); /* 3 items per row with some gap */
+    overflow: hidden; /* Ensures content doesn't overflow the container */
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03); /* Slightly enlarge the product item on hover */
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s; /* Transition for image transform */
+}
+
+.product-item:hover .product-image {
+    transform: scale(1.1); /* Enlarge the image slightly on hover */
+}
+
+.product-title {
+    font-size: 1.25rem;
+    color: black !important; /* Black color for product titles */
+    text-decoration: none; /* Remove underline */
+    margin: 10px 0;
+    transition: color 0.3s; /* Transition for color change */
+}
+
+.product-title a {
+    color: black; /* Ensures title color is black and clickable */
+    text-decoration: none; /* Remove underline */
+}
+
+.product-title a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #333; /* Slightly darker color on hover */
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #666; /* Gray color for description text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 20px); /* 2 items per row on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%; /* 1 item per row on very small screens */
+    }
+}

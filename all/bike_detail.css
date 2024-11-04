@@ -1,0 +1,27 @@
+.bike-media {
+    display: flex; /* Arrange children in a row */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space out the items */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.bike-video {
+    max-width: 45%; /* Make the video take up 45% of the container width */
+}
+
+.small-video {
+    width: 100%; /* Ensure the video takes the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Round the corners */
+}
+
+.bike-image {
+    max-width: 45%; /* Make the image take up 45% of the container width */
+    text-align: right; /* Align the image to the right */
+}
+
+.bike-image-content {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Round the corners */
+}

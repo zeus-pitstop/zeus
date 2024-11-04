@@ -1,0 +1,308 @@
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden; /* Hide overflow for the sliding effect */
+}
+
+.carousel-item {
+    flex: 0 0 100%; /* Each item takes full width */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Slide Text */
+.slide-text {
+    position: absolute;
+    bottom: 10px; /* Align text to the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%);
+    color: black; /* Set text color to black */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for visibility */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Error message for no additional images */
+.no-images-error {
+    text-align: center;
+    font-size: 1.2em;
+    color: #dc3545; /* Red color for error message */
+    margin-top: 20px;
+}
+
+/* Main Content */
+.product-detail {
+    padding: 20px;
+}
+
+.product-detail h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #f39c12; /* Change font color for the main title */
+}
+
+.product-detail-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    background-color: #fff; /* White background around the image */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 10px; /* Add padding to ensure space between the image and its border */
+    transition: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.2); /* Scale the image to 120% of its original size */
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info p {
+    font-size: 1.2em;
+    color: #ffffff; /* Change font color for paragraphs */
+    line-height: 1.6;
+}
+
+.product-actions {
+    margin-top: 20px;
+}
+
+.product-actions form {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.wishlist-button, .buy-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.wishlist-button {
+    background-color: #ff0000; /* Red */
+    color: #fff;
+}
+
+.buy-button {
+    background-color: #2ecc71; /* Green */
+    color: #fff;
+}
+
+.wishlist-button:hover, .cart-button:hover, .buy-button:hover {
+    opacity: 0.9;
+}
+
+/* Style the quantity label */
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Style the quantity input field */
+form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Style the Add to Cart button */
+form .btn.add-to-cart {
+    background-color: #007bff; /* Bootstrap blue color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form .btn.add-to-cart:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional: Add some spacing around the form for better appearance */
+form {
+    margin: 20px 0;
+}
+
+/* Feedback section */
+.feedback {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.feedback h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.feedback label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.feedback input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.feedback input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.feedback input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.feedback span {
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.feedback textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.feedback .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.feedback .btn:hover {
+    background-color: #218838;
+}
+
+/* Success and error messages */
+.feedback-success,
+.feedback-error {
+    margin-top: 10px;
+    font-size: 1.1em;
+    display: none;
+}
+
+.feedback-success {
+    color: #28a745;
+}
+
+.feedback-error {
+    color: #dc3545;
+}
+
+/* CSS for specific h2 element */
+#customer-reviews-heading {
+    color: #ffffff; /* Example color */
+    font-size: 28px; /* Example font size */
+    font-weight: bold; /* Example font weight */
+    margin-bottom: 20px; /* Example margin */
+    text-align: center !important; /* Center alignment */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.reviews-container {
+    text-align: center; /* Center-aligns the title */
+    padding: 20px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between reviews */
+}
+
+.review-item {
+    background-color: #ffffff; /* Ensure background is white for visibility */
+    border-radius: 10px; /* Curved corners */
+    padding: 20px; /* Increased padding for a larger box */
+    max-width: 400px; /* Increased width for each review */
+    margin: 10px; /* Margin around each review */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-align: left; /* Align text to the left inside the box */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    color: #333; /* Ensure text color is dark enough for readability */
+}
+
+.review-item p {
+    margin: 0; /* Remove default margin from paragraphs */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+.review-item .rating {
+    font-size: 1em; /* Adjust font size for the rating */
+    margin-top: 5px; /* Space above the rating */
+    color: #f39c12; /* Color for stars (or adjust as needed) */
+}
+
+.delete-review {
+    display: block; /* Make the button a block-level element */
+    width: 150px; /* Increase button width */
+    padding: 10px; /* Increase padding for a larger button */
+    margin: 20px auto; /* Center the button and add margin above and below */
+    background-color: #e74c3c; /* Red background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Curved corners for the button */
+    text-align: center; /* Center the text inside the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.delete-review:hover {
+    background-color: #ff1900; /* Darker red on hover */
+}

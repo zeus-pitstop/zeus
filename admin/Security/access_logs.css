@@ -1,0 +1,16 @@
+/* Access Logs Page Styles */
+.access-logs-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.access-logs-list th, .access-logs-list td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.access-logs-list th {
+    background-color: #f4f4f4;
+}

@@ -1,0 +1,141 @@
+/* Profile Section */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f4f4f4;
+    background-image: url('../image/bg.jpg'); /* Match background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #eaeaea; /* Light text color */
+}
+
+/* Profile Picture Section */
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #f5a623; /* Accent color */
+    margin-bottom: 10px;
+}
+
+.profile-picture input {
+    display: none;
+}
+
+#upload-pic {
+    color: #f5a623; /* Accent color */
+    cursor: pointer;
+}
+
+#upload-pic:hover {
+    text-decoration: underline;
+}
+
+/* Profile Details Section */
+.profile-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #eaeaea; /* Light text color */
+}
+
+.profile-details p strong {
+    color: #f5a623; /* Accent color for labels */
+}
+
+/* Profile Actions */
+.profile-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profile-actions .btn {
+    background-color: #f5a623; /* Accent color for buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    width: 48%;
+    cursor: pointer;
+}
+
+.profile-actions .btn:hover {
+    background-color: #f4a300; /* Darker shade on hover */
+}
+
+.profile-actions .logout-btn {
+    background-color: #f44336; /* Logout button color */
+}
+
+.profile-actions .logout-btn:hover {
+    background-color: #e53935; /* Darker shade on hover */
+}
+
+/* Order History Section */
+.order-history {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.order-history .view-orders-btn {
+    background-color: #4CAF50; /* Green background for button */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.order-history .view-orders-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Delete Account Section */
+.delete-account {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.delete-account .delete-btn {
+    background-color: #e53935; /* Delete button color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.delete-account .delete-btn:hover {
+    background-color: #d32f2f; /* Darker shade on hover */
+}

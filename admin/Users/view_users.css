@@ -1,0 +1,30 @@
+/* View Users Page Styles */
+.user-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.user-list th, .user-list td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.user-list th {
+    background-color: #f4f4f4;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-buttons a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.action-buttons a:hover {
+    text-decoration: underline;
+}

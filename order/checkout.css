@@ -1,0 +1,207 @@
+/* checkout.css */
+
+/* Basic reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(../image/bg.jpg);
+    background-color: #000000;
+    color: #333;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #555 !important;
+}
+
+.user-details, .cart-summary {
+    margin-bottom: 30px;
+}
+
+.user-details p, .cart-summary p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.cart-table th {
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+}
+
+.cart-table td {
+    color: #333;
+}
+
+.total-cost {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* QR Code Popup Styles */
+.qr-popup {
+    display: none; /* Initially hidden */
+    position: fixed; /* Position relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for true center */
+    width: 80%; /* Width of the popup */
+    max-width: 600px; /* Maximum width */
+    background-color: #fff; /* White background for the popup */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 1000; /* High z-index to overlay on other content */
+    padding: 20px; /* Padding inside the box */
+}
+
+/* Heading Styles */
+.qr-code h3 {
+    margin-bottom: 15px; /* Space below the heading */
+    color: #333; /* Darker color for the heading */
+    text-align: center; /* Center text */
+}
+
+/* Image Styles */
+.qr-code img {
+    max-width: 60%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
+    display: block; /* Center the image */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button Styles */
+#paymentDoneBtn {
+    padding: 10px 15px; /* Inner padding for the button */
+    background-color: #333; /* Dark background for button */
+    color: white; /* White text for contrast */
+    border: none; /* No border for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button */
+    border-radius: 4px; /* Rounded corners for button */
+    display: block; /* Center the button */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#paymentDoneBtn:hover {
+    background-color: #555; /* Lighter shade on hover */
+}
+
+/* Close Button Styles */
+.close-btn {
+    position: absolute; /* Position relative to the popup */
+    top: 10px; /* Position from the top */
+    right: 10px; /* Position from the right */
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    color: #333; /* Dark text color */
+    font-size: 20px; /* Font size for close button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.close-btn:hover {
+    color: #ff6666; /* Change color on hover */
+}
+
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .cart-table th, .cart-table td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    input[type="text"], textarea {
+        font-size: 14px;
+    }
+
+    input[type="submit"], #paymentDoneBtn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

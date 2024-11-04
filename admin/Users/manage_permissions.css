@@ -1,0 +1,16 @@
+/* Manage Permissions Page Styles */
+.permissions-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.permissions-list th, .permissions-list td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.permissions-list th {
+    background-color: #f4f4f4;
+}

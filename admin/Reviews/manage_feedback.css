@@ -1,0 +1,16 @@
+/* Manage Feedback Page Styles */
+.feedback-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.feedback-list th, .feedback-list td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.feedback-list th {
+    background-color: #f4f4f4;
+}

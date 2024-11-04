@@ -1,0 +1,16 @@
+/* Inventory Page Styles */
+.inventory-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.inventory-list th, .inventory-list td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.inventory-list th {
+    background-color: #f4f4f4;
+}

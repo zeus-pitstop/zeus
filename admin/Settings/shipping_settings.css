@@ -1,0 +1,34 @@
+/* Shipping Settings Page Styles */
+.shipping-settings-form {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.shipping-settings-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.shipping-settings-form .form-group input, .shipping-settings-form .form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.save-shipping-settings-btn {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn-save-shipping-settings {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-save-shipping-settings:hover {
+    background-color: #0056b3;
+}

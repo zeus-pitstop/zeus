@@ -1,0 +1,23 @@
+/* View Orders Page Styles */
+.order-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.order-list th, .order-list td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.order-list th {
+    background-color: #f4f4f4;
+}
+
+.order-details {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

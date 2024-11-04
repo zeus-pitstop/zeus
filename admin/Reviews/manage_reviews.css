@@ -1,0 +1,16 @@
+/* Manage Reviews Page Styles */
+.reviews-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.reviews-list th, .reviews-list td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.reviews-list th {
+    background-color: #f4f4f4;
+}

@@ -1,0 +1,34 @@
+/* Support Requests Page Styles */
+.support-requests-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.support-requests-list th, .support-requests-list td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.support-requests-list th {
+    background-color: #f4f4f4;
+}
+
+.reply-btn {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn-reply {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-reply:hover {
+    background-color: #0056b3;
+}

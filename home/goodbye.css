@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;       /* Ensure full height for html and body */
+    margin: 0;         /* Remove default margin */
+    padding: 0;        /* Remove default padding */
+}
+
+.goodbye-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;     /* Full height of the viewport */
+    background-color: #f4f4f4;
+    background-image: url('../image/bg.jpg'); /* Match background image */
+    background-size: cover; /* Cover entire section */
+    background-position: center; /* Center the background image */
+}
+
+.goodbye-container {
+    max-width: 600px;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.goodbye-container h2 {
+    color: #eaeaea; /* Light text color */
+}
+
+.goodbye-container p {
+    color: #eaeaea; /* Light text color */
+    margin-bottom: 20px;
+}
+
+.goodbye-container .btn {
+    background-color: #f5a623; /* Accent color for button */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.goodbye-container .btn:hover {
+    background-color: #f4a300; /* Darker shade on hover */
+}
